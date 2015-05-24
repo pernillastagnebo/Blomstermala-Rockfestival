@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Blomstermala Rockfestival</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<a href="login.html">Logga in</a>
+		<div id="wrapper">
+			<header>
+					<img src="festival.png" alt="Blomstermåla Rockfestival">
+			</header>
+		
+		
+			<nav>
+				<ul> 	
+					
+					<li><a href="band.html">BAND</a></li>
+					<li id="chosen"><a href="program.html">PROGRAM</a></li>
+					<li ><a href="kontakt.html">KONTAKT</a></li>
+					
+				</ul>
+			
+			</nav>
+		
+
+		<section id="content">
+			<h2 class="headline">PROGRAM</h2>
+			<p class="day"> Torsdag 18 juni</p>
+			<table style="width:100%">
+                 <th>
+				 <tr>
+                    <th>Band</th>
+                    <th>Scen</th> 
+                    <th>Tid</th>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+				 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+				 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+            </table>
+			<p class="day"> Fredag 19 juni</p>
+			<table style="width:100%">
+                 <th>
+				 <tr>
+                    <th>Band</th>
+                    <th>Scen</th> 
+                    <th>Tid</th>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+				 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+				 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+            </table>
+			
+			<p class="day"> Lördag 20 juni</p>
+			<table style="width:100%">
+                 <th>
+				 <tr>
+                    <th>Band</th>
+                    <th>Scen</th> 
+                    <th>Tid</th>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+				 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+				 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+            </table>
+			
+			<p class="day"> Söndag 21 juni</p>
+			<table style="width:100%">
+                 <th>
+				 <tr>
+                    <th>Band</th>
+                    <th>Scen</th> 
+                    <th>Tid</th>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+				 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+				 <tr>
+                    <td></td>
+                    <td></td> 
+                    <td></td>
+                 </tr>
+            </table>	
+				
+
+		</section>
+
+		</div>
+	</body>
+</html>
