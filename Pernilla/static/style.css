@@ -1,0 +1,86 @@
+/* Boxen som har allt innehåll*/
+#wrapper {
+margin:auto;
+width:800px;
+}
+
+nav>ul>li{
+
+	list-style-type: none;
+	display: inline;
+	padding-left: 77px;
+	padding-right:77px;
+
+}
+
+#chosen {
+	text-decoration: underline;
+}
+
+nav>ul>li>a {
+	text-decoration: none;
+	font-family: "courier new";
+	font-size: 20px;
+	color:#BA9343;
+}
+
+
+section {
+	padding-top:50px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+label {
+       display:block;
+       line-height: 2;
+	position:relative;
+	margin:10px 0px;
+}
+textarea {
+	display:block;
+        line-height:2;
+	position:relative;
+	margin:10px 0px;
+}
+select {
+	display:block;
+        line-height:2;
+	position:relative;
+	margin:10px 0px;
+}
+
+.day {
+	   font-size: 22px;
+	   box-shadow: 1px 1px 1px 1px #CFCFCF;
+       border-radius: 10px 10px 10px 10px;
+	   font-family: segoe script;
+	   }
+
+td{
+    border: 1px solid black;
+	width: 30px;
+	padding: 20px;
+	border-radius: 20px 20px 20px 20px;
+	
+}
+
+.kontakta { 
+           font-family: segoe script;
+		   font-size: 20px;
+		   
+}
+
+.kontaktuppg{
+            font-size: 20px;
+			}
+#banden {
+        
+		 font-size: 25px;
+	}
+.headline {
+           box-shadow: 7px 7px 7px 7px #CFCFCF;
+		   font-size: 30px;
+		   font-family: MAIANDRA GD;
+		   }
