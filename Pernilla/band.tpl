@@ -29,14 +29,8 @@
 		<section id="content">
 			<h2 class="headline">BAND</h2>
 			<h4 id="banden">I år gästar de här banden oss!</h4>
-			<p>*</p>
-			<p>*</p>
-			<p>*</p>
-			<p>*</p>
-			<p>*</p>
-			<p>*</p>
-			<p>*</p>
-			<p>*</p>
+			<p>{{Bandname}}</p>
+			
 								
 
 		</section>

@@ -4,6 +4,7 @@ from os import listdir
 import mysql.connector
 import databas
 
+
 @route('/static/<filename>')
 def serve_static(filename):
     """Lägger in CSS-filen samt bilderna"""
@@ -13,11 +14,20 @@ def serve_static(filename):
 @route('/band')
 def band():
     """Förstasidan"""
-    bandLista=databas.Get_band()        
-    return template("band", bandLista= bandLista)
-            
     
+    
+    Bandname=databas.Get_band()
+    print Bandname
+    return template('band', Bandname=Bandname)
+        
+        
+    
+
+    
+            
+   
 
 
 
 run(debug=True, reloader=True, host='localhost', port=8080)
+
