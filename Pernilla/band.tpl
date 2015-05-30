@@ -29,12 +29,14 @@
 		<section id="content">
 			<h2 class="headline">BAND</h2>
 			<h4 id="banden">I år gästar de här banden oss!</h4>
-			<p>{{Bandname}}</p>
 			
-								
-
+			<!--Skriver endast ut bandnamnen från band-tabellen-->
+			% for bandname in band:
+			<center>{{bandname[0]}}</center>
+				
+			
 		</section>
 
-		</div>
+		
 	</body>
 </html>

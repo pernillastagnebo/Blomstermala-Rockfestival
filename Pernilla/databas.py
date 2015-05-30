@@ -15,17 +15,20 @@ cursor=db.cursor()
         print employee [0], employee [1], employee [2], employee [3]'''
 
 def Get_band():
+    '''Läser från databasen och hämtar allt som finns i tabellen Band'''
+    '''Lägger alla variabler i en lista och returnerar värdet'''
+    
     cursor.execute("Select Bandname, Genre, Country, Contact from Band order by Bandname")
     result = cursor.fetchall()
-    #iterate through resultser
+    
     bandlist=[]
     bandlist.append(result)
 
     for band in bandlist:
-        for name in band:
-            Bandname = name[0]
-            print Bandname
-    return Bandname
+        print band
+            
+    return band
+
                         
         
     
@@ -41,39 +44,6 @@ def Get_band():
 
     
        
-
-
-        
-    '''bandLista=[]
-    
-    
-    for band in result:
-         Bandname = band[0]'''
-         
-    '''Genre = bandLista.append(band[1])
-    Country = bandLista.append(band[2])
-    Contact = bandLista.append(band[3])'''
-
-    
-
-    '''i = 0
-    bandLista={}
-    Bandname = band[0]
-    Genre = band[1]
-    Country = band[2]
-    Contact = int(band[3])
-    
-    for band in result:
-        bandLista[Bandname] = Genre, Country, Contact
-    return bandLista'''
-    
-    
-    '''for band in result:
-        bandLista.append(band)
-        print bandLista[i]
-        i = i+1
-    return bandLista'''
-    #get the resultset as a tuple
 
  
 '''def Show_stage():
@@ -104,4 +74,4 @@ def In_charge():
     In_charge()'''
 
 
-Get_band()
+

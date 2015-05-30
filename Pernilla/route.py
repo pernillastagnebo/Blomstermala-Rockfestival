@@ -13,12 +13,11 @@ def serve_static(filename):
     
 @route('/band')
 def band():
-    """Förstasidan"""
+    """Hämtar variblerna i band från filen databas.py och returnerar värdet."""
     
     
-    Bandname=databas.Get_band()
-    print Bandname
-    return template('band', Bandname=Bandname)
+    band=databas.Get_band()
+    return template('band', band=band)
         
         
     
