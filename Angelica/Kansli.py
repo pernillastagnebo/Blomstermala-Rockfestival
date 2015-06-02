@@ -26,11 +26,8 @@ def Show_stage():
     Show_stage()
     
 def Add_NewBand():
-    name = raw_input("BandName")
-    genre = raw_input("Genre")
-    country =raw_input("Country")
-    bandinfo =raw_input("Bandinfo")
-    SQLsstring ="Insert into Band values(" + name + "," + genre + "," + country + "," + bandinfo + ","+ str(Antal_Bandmedlemmar +")
+    SQLsstring ="Insert into Band values(" + Bandname + "," +
+    Genre + "," + Country + "," + str(Antal_Bandmedlemmar +") 
     print SQLsstring
     cursor.execute(SQLsstring)
     db.commit()
