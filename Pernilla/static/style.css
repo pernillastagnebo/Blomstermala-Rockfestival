@@ -32,31 +32,50 @@ section {
 
 }
 
+
+
+/*Pernillas CSS*/
+#bandname {
+	font-family: "courier new";
+	font-size: 30px;
+	text-align: center;
+}
+
+#bandinfo {
+	font-family: "courier new";
+}
+
+
+
+
+
+
+
 label {
-       display:block;
-       line-height: 2;
+    display:block;
+    line-height: 2;
 	position:relative;
 	margin:10px 0px;
 }
 textarea {
 	display:block;
-        line-height:2;
+    line-height:2;
 	position:relative;
 	margin:10px 0px;
 }
 select {
 	display:block;
-        line-height:2;
+    line-height:2;
 	position:relative;
 	margin:10px 0px;
 }
 
 .day {
-	   font-size: 22px;
-	   box-shadow: 1px 1px 1px 1px #CFCFCF;
-       border-radius: 10px 10px 10px 10px;
-	   font-family: segoe script;
-	   }
+	font-size: 22px;
+	box-shadow: 1px 1px 1px 1px #CFCFCF;
+    border-radius: 10px 10px 10px 10px;
+	font-family: segoe script;
+}
 
 td{
     border: 1px solid black;
@@ -67,20 +86,19 @@ td{
 }
 
 .kontakta { 
-           font-family: segoe script;
-		   font-size: 20px;
+    font-family: segoe script;
+	font-size: 20px;
 		   
 }
 
 .kontaktuppg{
-            font-size: 20px;
-			}
-#banden {
-        
-		 font-size: 25px;
-	}
-.headline {
-           box-shadow: 7px 7px 7px 7px #CFCFCF;
-		   font-size: 30px;
-		   font-family: MAIANDRA GD;
-		   }
+    font-size: 20px;
+}
+
+
+
+#headline {
+	box-shadow: 7px 7px 7px 7px #CFCFCF;
+	font-size: 30px;
+	font-family: "courier new";
+}

@@ -4,7 +4,7 @@ import mysql.connector
 
 #connect
 db = mysql.connector.connect(host="195.178.235.60",
-user="ae2947", passwd="Nilorak96", db="ae2947")
+user="ae6226", passwd="hhellstrom", db="ae6226")
 cursor=db.cursor()
 
 '''def Get_employee():
@@ -18,16 +18,32 @@ def Get_band():
     '''Läser från databasen och hämtar allt som finns i tabellen Band'''
     '''Lägger alla variabler i en lista och returnerar värdet'''
     
-    cursor.execute("Select Bandname, Genre, Country, Contact from Band order by Bandname")
+    cursor.execute("Select Bandname, Genre, Country from Band order by Bandname")
     result = cursor.fetchall()
     
     bandlist=[]
     bandlist.append(result)
 
-    for band in bandlist:
-        print band
+    for bandcolumn in bandlist:
+        print bandcolumn
             
-    return band
+    return bandcolumn
+
+def Get_bandmembers():
+    '''Läser från databasen och hämtar allt som finns i tabellen Bandmembers'''
+    '''Lägger alla variabler i en lista och returnerar värdet'''
+    
+    cursor.execute("Select Bandmembers.Name, Bandmembers.Information from (Bandmembers inner join Consistsof on Bandmembers.MemberID = Consistsof.Members) inner join Band on Consistsof.Band=Band.Bandname")
+    result = cursor.fetchall()
+    
+    bandmemberslist=[]
+    bandmemberslist.append(result)
+
+    for bandmembercolumn in bandmemberslist:
+        print bandmembercolumn
+        if 
+            
+    return bandmembercolumn
 
                         
         
@@ -73,5 +89,5 @@ def Show_program():
 def In_charge():
     In_charge()'''
 
-
+Get_bandmembers()
 

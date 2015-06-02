@@ -16,10 +16,20 @@ def band():
     """Hämtar variblerna i band från filen databas.py och returnerar värdet."""
     
     
-    band=databas.Get_band()
-    return template('band', band=band)
+    bandcolumn=databas.Get_band()
+    
+    
+    return template('band', bandcolumn=bandcolumn)
         
+@route('/bandinfo')
+def bandinfo():
+    """Hämtar variblerna i band och bandmembers från filen databas.py och returnerar värdet."""
+    
+
+    
+    return template('views/bandinfo')
         
+                
     
 
     
