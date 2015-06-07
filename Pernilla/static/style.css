@@ -35,15 +35,21 @@ section {
 
 
 /*Pernillas CSS*/
-#bandname {
+#headlinestext {
 	font-family: "courier new";
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
+
 }
 
 #bandinfo {
 	font-family: "courier new";
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
 }
+
+
 
 
 
@@ -97,7 +103,7 @@ td{
 
 
 
-#headline {
+.headline {
 	box-shadow: 7px 7px 7px 7px #CFCFCF;
 	font-size: 30px;
 	font-family: "courier new";

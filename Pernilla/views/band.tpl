@@ -7,7 +7,7 @@
 	</head>
 	
 	<body>
-		<a href="login.html">Logga in</a>
+		<a href="/kansli/band">Logga in</a>
 		<div id="wrapper">
 
 			<header>
@@ -18,7 +18,7 @@
 			<nav>
 				<ul> 	
 					
-					<li id="chosen"><a href="band">BAND</a></li>
+					<li id="chosen"><a href="/band">BAND</a></li>
 					<li><a href="program">PROGRAM</a></li>
 					<li><a href="kontakt">KONTAKT</a></li>
 					
@@ -31,9 +31,13 @@
 				<h2 class="headline">BAND</h2>
 				
 			
-				<!--Skriver endast ut bandnamnen från band-tabellen-->
+				<!--Skriver ut bandnamn, genre och land från band-tabellen-->
+
 				% for band in bandcolumn:
-				<a href="bandinfo"><p id="bandname">Hej {{band[0]}}</p></a>
+					<p id="headlinestext">{{band[0]}}</p>
+					<p id="bandinfo">Ursprungsland: {{band[2]}}, Genre: {{band[1]}}</p>
+					<br>
+					
 				
 
 				
