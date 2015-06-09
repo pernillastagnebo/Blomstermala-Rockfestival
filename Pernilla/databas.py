@@ -31,20 +31,35 @@ def Band():
 
     
 
-def Add_band(Bandname,Genre,Country,Stage,Day,Time,Contactperson):
+def Add_band(Bandname,Genre,Country,Contactperson):
     
     
     sql = "INSERT INTO Band(Bandname, Genre, Country, Contact)VALUES ('%s','%s','%s','%s')"%(Bandname,Genre,Country,Contactperson)
-    sql2 = "INSERT INTO Schedule(Band,Stage,Day,Time)VALUES ('%s','%s','%s','%s')"%Bandname,Stage,Day,Time)
-
+    
     try:
-        cursor.execute(sql,sql2)
+        cursor.execute(sql)
         db.commit()
 
     except:
         db.rollback()
 
     db.close()
+
+def Delete_band(Delete):
+    
+    
+    sqldelete = "DELETE FROM Band WHERE Bandname LIKE'%s'"%(Delete)
+    
+    try:
+        cursor.execute(sqldelete)
+        db.commit()
+
+    except:
+        db.rollback()
+
+    db.close()
+
+
 
 
 

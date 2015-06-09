@@ -39,14 +39,27 @@ def kansli_band_saved():
     Bandname = request.forms.Bandname
     Genre = request.forms.Genre
     Country = request.forms.Country
-    Stage = request.forms.Stage
-    Day = request.forms.Day
-    Time = request.forms.Time
     Contactperson = request.forms.Contactperson
+    addband=databas.Add_band(Bandname,Genre,Country,Contactperson)
+    
+    return template('views/kansli-band-saved', Bandname=Bandname, Genre=Genre, Country=Country, Contactperson=Contactperson)
 
+@route('/kansli/band/delete-band')
+def kansli_band_delete():
+    """Låter användaren skriva in vilket band som ska raderas."""
     
     
-    addband=databas.Add_band(Bandname,Genre,Country,Stage, Day, Time,Contactperson)
+    return template('views/kansli-band-delete')
+
+@route('/kansli/band/deleted', method="POST")
+def kansli_band_deleted():
+    """Tar det band som användaren vill ta bort och raderar det från databasen."""
+    
+    Delete = request.forms.Delete
+    deleteband=databas.Delete_band(Delete)
+    return template('views/kansli-band-banddeleted', Delete=Delete)
+
+
     
 
 run(debug=True, reloader=True, host='localhost', port=8080)
