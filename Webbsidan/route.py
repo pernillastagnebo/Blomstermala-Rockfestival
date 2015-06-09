@@ -51,6 +51,26 @@ def kansli_band_saved():
         
     return template('views/kansli-band-saved', Bandname=Bandname, Genre=Genre, Country=Country, Stage=Stage, Day=Day, Time=Time,Contactperson=Contactperson)
 
+@route('/anstallda')
+def employee():
+    """Hämtar variblerna från employee från filen databas.py"""
+    """och retunerar värdet""" 
+    staff=databas.listemployee()
+    return template('views/anstallda', staff=staff)
 
+@route('anstallda/addemployee')
+def add_new_employee():
+    """Visar sidan där man kan lägga till en ny anställd."""
+    return template('views/addemployee')
+
+@route('anstallda/addemployee/savedemployee', method="POST")
+def employee_saved():
+    """Sparar alla värden i databasen som är inlagda eller ändrade."""
+    SSN = request.forms.SSN
+    Name = request.forms.Name
+    PhoneNO = request.forms.PhoneNO
+    
+    addemployee=databas.add_employee(SSN,Name,PhoneNO)
+    
+    return template('views/savedemployee', SSN=SSN, Name=Name, PhoneNO=PhoneNO)
 run(debug=True, reloader=True, host='localhost', port=8080)
-
