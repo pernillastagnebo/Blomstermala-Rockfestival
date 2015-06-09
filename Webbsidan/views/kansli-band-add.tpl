@@ -19,7 +19,7 @@
 				<ul> 	
 					
 					<li id="chosen"><a href="/kansli/band">BAND</a></li>
-					<li><a href="xxxxxxxxxx">ANSTÄLLDA</a></li>
+					<li><a href="/anstallda">ANSTÄLLDA</a></li>
 					<li><a href="xxxxxxxxxx">SCENER</a></li>
 					
 				</ul>
@@ -46,41 +46,6 @@
 						<label for "Country">Ursprungsland:</label>
 						<input type = "text" value="Country" name = "Country">
 					</p>
-					<br>
-
-					<!--
-					<h2 id="headlinestext">Sceninformation</h2>
-					<p>
-						<label for "Stage">Scen:</label>
-						<select name="Stage">
-							<option>Välj scen</option>
-							<option value="Lilla Scenen">Lilla Scenen</option>
-							<option value="Mellan Scenen">Mellan Scenen</option>
-							<option value="Stora Scenen">Stora Scenen</option>
-							<option value="MysTältet">MysTältet</option>
-						</select>
-					</p>
-					<p>
-						<label for "Day">Dag:</label>
-						<select name="Day">
-							<option>Välj dag</option>
-							<option value="Torsdag 18 juni">Torsdag 18 juni</option>
-							<option value="Fredag 19 juni">Fredag 19 juni</option>
-							<option value="Lördag 20 juni">Lördag 20 juni</option>
-							<option value="Söndag 21 juni">Söndag 21 juni</option>
-						</select>
-					</p>
-					<p>
-						<label for "Time">Tidpunkt:</label>
-						<select name="Time">
-							<option>Välj tid</option>
-							<option value="17.00-19.00">17.00-19.00</option>
-							<option value="19.00-21.00">19.00-21.00</option>
-							<option value="21.00-23.00">21.00-23.00</option>
-							<option value="23.00-01.00">23.00-01.00</option>
-						</select>
-					</p>
-					-->
 					<p>
 						<label for "Contactperson">Kontaktperson:</label>
 						<input type = "text" name = "Contactperson">

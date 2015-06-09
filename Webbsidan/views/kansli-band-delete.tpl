@@ -19,7 +19,7 @@
 				<ul> 	
 					
 					<li id="chosen"><a href="/kansli/band">BAND</a></li>
-					<li><a href="xxxxxxxxxx">ANSTÄLLDA</a></li>
+					<li><a href="/anstallda">ANSTÄLLDA</a></li>
 					<li><a href="xxxxxxxxxx">SCENER</a></li>
 					
 				</ul>
@@ -28,16 +28,20 @@
 		
 
 			<section id="content">
-				<h2 class="headline">BAND - BANDET ÄR INLAGT</h2>
+				<h2 class="headline">BAND - TA BORT BAND</h2>
 				
 			
-				<p>Bandet är nu inlagt</p>
-				<p>Bandnamn: {{Bandname}}</p>
-				<p>Genre: {{Genre}}</p>
-				<p>Land: {{Country}}</p>
-				<p>Kontaktperson: {{Contactperson}}</p>
-				
-				
+				<!--Skriver endast ut bandnamnen från band-tabellen-->
+				<form action = "/kansli/band/deleted" method = "POST">
+					<h2 id="headlinestext">Bandinformation</h2>
+					<p>
+						<label for "Delete">Vilket band vill du ta bort?</label>
+						<input type = "text" name = "Delete">
+					</p>
+					
+					
+					<p><input type = "submit" value = "Ta bort"></p>
+
 			
 			</section>
 

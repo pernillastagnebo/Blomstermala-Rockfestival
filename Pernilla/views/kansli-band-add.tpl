@@ -19,7 +19,7 @@
 				<ul> 	
 					
 					<li id="chosen"><a href="/kansli/band">BAND</a></li>
-					<li><a href="xxxxxxxxxx">ANSTÄLLDA</a></li>
+					<li><a href="/anstallda">ANSTÄLLDA</a></li>
 					<li><a href="xxxxxxxxxx">SCENER</a></li>
 					
 				</ul>

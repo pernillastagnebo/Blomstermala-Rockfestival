@@ -12,6 +12,8 @@ cursor=db.cursor()
 
 
 
+
+'''BAND-DELEN'''
 def Band():
     '''Läser från databasen och hämtar allt som finns i tabellen Band'''
     '''Lägger alla variabler i en lista och returnerar värdet'''
@@ -27,13 +29,10 @@ def Band():
             
     return bandcolumn
 
-
-
-    
+  
 
 def Add_band(Bandname,Genre,Country,Contactperson):
-    
-    
+    '''Lägger till ett nytt band till tabellen Band med informationen som användaren skrivit in'''
     sql = "INSERT INTO Band(Bandname, Genre, Country, Contact)VALUES ('%s','%s','%s','%s')"%(Bandname,Genre,Country,Contactperson)
 
     try:
@@ -42,10 +41,25 @@ def Add_band(Bandname,Genre,Country,Contactperson):
 
     except:
         db.rollback()
-
     db.close()
 
 
+
+def Delete_band(Delete):
+    '''Söker i tabellen Band om Bandname är detsamma som användaren har skrivit in för att tas bort'''
+    sqldelete = "DELETE FROM Band WHERE Bandname LIKE'%s'"%(Delete)
+    
+    try:
+        cursor.execute(sqldelete)
+        db.commit()
+
+    except:
+        db.rollback()
+    db.close()
+
+
+
+'''ANSTÄLLD-DELEN'''
 def Get_employee():
     '''Läser från databasen och hämtar allt som finns i tabellen Band'''
     '''Lägger alla variabler i en lista och returnerar värdet'''
@@ -63,6 +77,8 @@ def Get_employee():
     return liststaff
     #get the resultset as a tuple
 
+
+
 def listemployee():
     '''Läser från databasen och hämtar allt som finns i tabellen Get_employee'''
     '''Lägger alla variabler i en lista och returnerar värdet'''
@@ -73,6 +89,8 @@ def listemployee():
     for staff in allemployee:
         print staff
     return staff
+
+
 
 def add_employee(SSN,Name,PhoneNO):
     #förbereder ett cursor objekt genom att använda cursor() metod
@@ -89,6 +107,8 @@ def add_employee(SSN,Name,PhoneNO):
         #stänger databasen    
         db.rollback()
         db.close()
+
+
         
 def remove_employee(SSN,Name,PhoneNO):
     # prepare a cursor object using cursor() method

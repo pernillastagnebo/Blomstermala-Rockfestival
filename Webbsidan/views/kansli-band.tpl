@@ -19,7 +19,7 @@
 				<ul> 	
 					
 					<li id="chosen"><a href="/kansli/band">BAND</a></li>
-					<li><a href="xxxxxxxxxx">ANSTÄLLDA</a></li>
+					<li><a href="/anstallda">ANSTÄLLDA</a></li>
 					<li><a href="xxxxxxxxxx">SCENER</a></li>
 					
 				</ul>
@@ -35,6 +35,12 @@
 				<form>
 					<p>
 						<a href = "/kansli/band/add-band"><input type = "button" value = "Lägg till nytt band"></a>
+					</p>
+					<p>
+						<a href = "xxxxxxxxx"><input type = "button" value = "Lägg till ny bandmedlem (Ej implementerad)"></a>
+					</p>
+					<p>
+						<a href = "/kansli/band/delete-band"><input type = "button" value = "Ta bort band"></a>
 					</p>
 
 
