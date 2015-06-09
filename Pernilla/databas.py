@@ -31,13 +31,14 @@ def Band():
 
     
 
-def Add_band(Bandname,Genre,Country,Contactperson):
+def Add_band(Bandname,Genre,Country,Stage,Day,Time,Contactperson):
     
     
     sql = "INSERT INTO Band(Bandname, Genre, Country, Contact)VALUES ('%s','%s','%s','%s')"%(Bandname,Genre,Country,Contactperson)
+    sql2 = "INSERT INTO Schedule(Band,Stage,Day,Time)VALUES ('%s','%s','%s','%s')"%Bandname,Stage,Day,Time)
 
     try:
-        cursor.execute(sql)
+        cursor.execute(sql,sql2)
         db.commit()
 
     except:

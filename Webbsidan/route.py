@@ -39,12 +39,17 @@ def kansli_band_saved():
     Bandname = request.forms.Bandname
     Genre = request.forms.Genre
     Country = request.forms.Country
+    Stage = request.forms.Stage
+    Day = request.forms.Day
+    Time = request.forms.Time
     Contactperson = request.forms.Contactperson
+
     
-    addband=databas.Add_band(Bandname,Genre,Country,Contactperson)
+    
+    addband=databas.Add_band(Bandname,Genre,Country,Stage, Day, Time,Contactperson)
     
         
-    return template('views/kansli-band-saved', Bandname=Bandname, Genre=Genre, Country=Country, Contactperson=Contactperson)
+    return template('views/kansli-band-saved', Bandname=Bandname, Genre=Genre, Country=Country, Stage=Stage, Day=Day, Time=Time,Contactperson=Contactperson)
 
 
 run(debug=True, reloader=True, host='localhost', port=8080)

@@ -48,7 +48,6 @@
 					</p>
 					<br>
 
-					<!--
 					<h2 id="headlinestext">Sceninformation</h2>
 					<p>
 						<label for "Stage">Scen:</label>
@@ -80,7 +79,6 @@
 							<option value="23.00-01.00">23.00-01.00</option>
 						</select>
 					</p>
-					-->
 					<p>
 						<label for "Contactperson">Kontaktperson:</label>
 						<input type = "text" name = "Contactperson">
