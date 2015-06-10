@@ -10,7 +10,16 @@ import mysql.connector
 db = mysql.connector.connect(host="195.178.235.60", user="ae6226", passwd="hhellstrom", db="ae6226")
 cursor=db.cursor()
 
-
+'''PROGRAM-DELEN'''
+def Program_torsdag():
+    cursor.execute("Select Band, Stage, Time from Schedule where Day='Torsdag 18 juni' order by Time")
+    result = cursor.fetchall()
+    #iterate through resultser
+    torsdag=[]
+    torsdag.append(result)
+    for bandett in torsdag:
+        print bandett
+    return bandett
 
 
 '''BAND-DELEN'''
@@ -41,7 +50,7 @@ def Add_band(Bandname,Genre,Country,Contactperson):
 
     except:
         db.rollback()
-    db.close()
+        db.close()
 
 
 
@@ -55,7 +64,7 @@ def Delete_band(Delete):
 
     except:
         db.rollback()
-    db.close()
+        db.close()
 
 
 
@@ -110,16 +119,19 @@ def add_employee(SSN,Name,PhoneNO):
 
 
         
-def remove_employee(SSN,Name,PhoneNO):
+def remove_employee(deleteemployee):
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
+
     # Prepare SQL query to DELETE required records
-    sql = "DELETE FROM Employee(SSN, Name, PhoneNO) VALUES('%s', '%s', '%s')"%(SSN,Name,PhoneNO) 
+    sql = "DELETE FROM Employee WHERE Name LIKE '%s'"%(deleteemployee) 
+
     try:
        # Execute the SQL command
        # Commit your changes in the database
        cursor.execute(sql)
        db.commit()
+
     except:
        # Rollback in case there is any error
        # disconnect from server   

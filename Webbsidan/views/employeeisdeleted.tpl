@@ -28,33 +28,10 @@
 		
 
 			<section id="content">
-				<h2 class="headline">BAND</h2>
+				<h2 class="headline">ANSTÄLLD - DEN ANSTÄLLDA HAR NU TAGITS BORT</h2>
 				
 			
-				<!--Skriver ut bandnamn, genre och land från band-tabellen-->
-				<form>
-					<p>
-						<a href = "/kansli/band/add-band"><input type = "button" value = "Lägg till nytt band"></a>
-					</p>
-					
-					<p>
-						<a href = "/kansli/band/delete-band"><input type = "button" value = "Ta bort band"></a>
-					</p>
-
-
-				% for band in bandcolumn:
-					<p id="headlinestext">{{band[0]}}</p>
-					<form>
-						<p>
-							<center>
-								<a href = "/kansli/band/update-band"></a>
-								<a href = "/kansli/band/remove-band"></a>
-							</center>
-						</p>
-					<br>
-					
-				
-
+				<p> {{deleteemployee}} är raderad från databasen.</p>
 				
 				
 				

@@ -20,7 +20,7 @@
 					
 					<li id="chosen"><a href="/band">BAND</a></li>
 					<li><a href="/program">PROGRAM</a></li>
-					<li>KONTAKT</li>
+					<li><a href="xxxxxxxx">KONTAKT</a></li>
 					
 				</ul>
 			

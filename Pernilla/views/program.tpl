@@ -7,31 +7,31 @@
 	</head>
 	
 	<body>
-		<a href="/band">Logga in</a>
+		<a href="http://localhost:8080/login">Logga in</a>
 		<div id="wrapper">
 			<header>
-					<img src="/static/festival.png" alt="BlomstermÃ¥la Rockfestival">
+					<img src="/static/festival.png" alt="Blomstermåla Rockfestival">
 			</header>
 		
 		
 			<nav>
 				<ul> 	
 					
-					<li><a href="/band">BAND</a></li>
-					<li id="chosen"><a href="/">PROGRAM</a></li>
-					<li ><a href="/kontakt">KONTAKT</a></li>
+					<li><a href="http://localhost:8080/band">BAND</a></li>
+					<li id="chosen"><a href="http://localhost:8080/program">PROGRAM</a></li>
+					<li ><a href="http://localhost:8080/kontakt">KONTAKT</a></li>
 					
 				</ul>
 			
 			</nav>
 		
 
-		      <section id="content">
-            <h2 class="headline">PROGRAM</h2>
-            <p class="day"> Torsdag 18 juni</p>
-            <table style="width:100%">
+		<section id="content">
+			<h2 class="headline">PROGRAM</h2>
+			<p class="day"> Torsdag 18 juni</p>
+			<table style="width:100%">
                  
-                 <tr>
+				 <tr>
                     <th>Band</th>
                     <th>Scen</th> 
                     <th>Tid</th>
@@ -50,12 +50,11 @@
                         <td>{{band[2]}}</td>
                     </tr>
                  
-                </table>
-                
-                
+            	</table>
+				
+				
 
-        </section>
-                 
+		</section>
 
 		</div>
 	</body>

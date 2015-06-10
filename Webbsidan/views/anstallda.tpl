@@ -16,36 +16,28 @@
 		
 			<nav>
 				<ul> 	
-					<li id="chosen"><a href="/kansli/band">BAND</a></li>
-					<li><a href="/anstallda">ANSTÄLLDA</a></li>
+					<li><a href="/kansli/band">BAND</a></li>
+					<li id="chosen"><a href="/anstallda">ANSTÄLLDA</a></li>
 					<li><a href="xxxxxxxxxx">SCENER</a></li>
 				</ul>
 			
 			</nav>
 		<section>
 		<p>
-			<a href ="/addemployee"><input type = "button" value = "Lägg till Anställd"></a>
+			<a href ="/anstallda/addemployee"><input type = "button" value = "Lägg till Anställd"></a>
 		</p>
+			<center>
+				<a href = "/anstallda"><input type = "button" value = "Ändra anställd"></a>
+				<a href = "/anstallda/deleteemployee"><input type = "button" value = "Ta bort anställd"></a>
+			<center>
+		% for employee in staff:
+						    <center>
+					<p id="headlinestext">{{employee[1]}}<br>{{employee[2]}}<br>{{employee[3]}}</p>
+					<form>
+							</center>
+					
+					<br>
 		
-		<h2 class="staff">Alla anställda</h2>
-		   		
-			<form action ="">
-			   <table style="width:50%;>
-				<!--Skriver ut alla anställdas namn, personnummer och telefonnummer.-->
-				% for employee in staff:
-					<fieldset>
-					<th id="Person">Personnummer:</th> 
-					<td>{{employee[1]}}</td>
-					<br>
-					<th id="Namn">Namn:</th>
-					<td>{{employee[2]}}</td>
-					<br>
-					<th id="telenr">Telefonnummer: </th>
-					<td>{{employee[3]}}</td>
-					<br>
-					</fieldset>
-				</table>
-			</form>
 			</section>
 		
 		</div>

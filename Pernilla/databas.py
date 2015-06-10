@@ -11,6 +11,17 @@ db = mysql.connector.connect(host="195.178.235.60", user="ae6226", passwd="hhell
 cursor=db.cursor()
 
 
+def Program_torsdag():
+    cursor.execute("Select Band, Stage, Time from Schedule where Day='Torsdag 18 juni' order by Time")
+    result = cursor.fetchall()
+    #iterate through resultser
+    torsdag=[]
+    torsdag.append(result)
+    for bandett in torsdag:
+        print bandett
+    return bandett
+
+    
 
 def Band():
     '''Läser från databasen och hämtar allt som finns i tabellen Band'''

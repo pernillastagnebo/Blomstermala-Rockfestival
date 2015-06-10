@@ -28,30 +28,19 @@
 		
 
 			<section id="content">
-				<h2 class="headline">BAND - LÄGG TILL NYTT BAND</h2>
+				<h2 class="headline">Anställd - TA BORT ANSTÄLLD</h2>
 				
 			
 				<!--Skriver endast ut bandnamnen från band-tabellen-->
-				<form action = "/kansli/band/saved" method = "POST">
+				<form action = "/deleteemployee/employeeisdeleted", method = "POST">
 					<h2 id="headlinestext">Bandinformation</h2>
 					<p>
-						<label for "Bandname">Bandnamn:</label>
-						<input type = "text" name = "Bandname">
-					</p>
-					<p>
-						<label for "Genre">Genre:</label>
-						<input type = "text" name = "Genre">
-					</p>
-					<p>
-						<label for "Country">Ursprungsland:</label>
-						<input type = "text" name = "Country">
-					</p>
-					<p>
-						<label for "Contactperson">Kontaktperson:</label>
-						<input type = "text" name = "Contactperson">
+						<label for "deleteemployee">Vilken anställd vill du ta bort?</label>
+						<p>Skriv in Namnet:</p><input type = "text" name = "deleteemployee">
 					</p>
 					
-					<p><input type = "submit" value = "Spara"></p>
+					
+					<p><input type = "submit" value = "Ta bort"></p>
 
 			
 			</section>

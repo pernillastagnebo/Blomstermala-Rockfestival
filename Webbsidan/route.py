@@ -11,6 +11,13 @@ def serve_static(filename):
     return static_file(filename, root ="static")
 
 
+'''PROGRAM-DELEN'''
+@route('/')
+def program():
+    bandett=databas.Program_torsdag()
+    
+    return template("program", bandett=bandett)
+
 
  
 '''BAND_DELEN'''  
@@ -77,13 +84,13 @@ def employee():
     return template('views/anstallda', staff=staff)
 
 
-@route('anstallda/addemployee')
+@route('/anstallda/addemployee')
 def add_new_employee():
     """Visar sidan där man kan lägga till en ny anställd."""
     return template('views/addemployee')
 
 
-@route('anstallda/addemployee/savedemployee', method="POST")
+@route('/anstallda/addemployee/savedemployee', method="POST")
 def employee_saved():
     """Sparar alla värden i databasen som är inlagda eller ändrade."""
     SSN = request.forms.SSN
@@ -94,6 +101,17 @@ def employee_saved():
     
     return template('views/savedemployee', SSN=SSN, Name=Name, PhoneNO=PhoneNO)
 
+@route('/anstallda/deleteemployee')
+def delete_employee():
+    """Webbsidan visar vilken anställd som är borttagen"""
+    return template('views/deleteemployee')
 
+
+@route('/deleteemployee/employeeisdeleted', method="POST")
+def employee_delete():
+    """Kansliet väljer vilken anställd som ska tas bort"""
+    deleteemployee =request.forms.deleteemployee
+    delete=databas.remove_employee(deleteemployee)
+    return template('views/employeeisdeleted', deleteemployee=deleteemployee)
 
 run(debug=True, reloader=True, host='localhost', port=8080)

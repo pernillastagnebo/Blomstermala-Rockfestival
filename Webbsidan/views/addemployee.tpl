@@ -16,8 +16,8 @@
 		
 			<nav>
 				<ul> 	
-					<li id="chosen"><a href="/kansli/band">BAND</a></li>
-					<li><a href="/anstallda">ANSTÄLLDA</a></li>
+					<li><a href="/kansli/band">BAND</a></li>
+					<li id="chosen"><a href="/anstallda">ANSTÄLLDA</a></li>
 					<li><a href="xxxxxxxxxx">SCENER</a></li>
 				</ul>
 			
@@ -32,15 +32,15 @@
 					<h2 id="headlinestext">Lägg till en Anställd</h2>
 					<p>
 						<label for "SSN">Personnummer:</label>
-						<input type = "text" value="SSN" name = "SSN">
+						<input type = "text" name = "SSN">
 					</p>
 					<p>
 						<label for "Name">Namn:</label>
-						<input type = "text" value="Name" name = "Name">
+						<input type = "text" name = "Name">
 					</p>
 					<p>
 						<label for "PhoneNO">Telefonummer:</label>
-						<input type = "text" value="PhoneNO" name = "PhoneNO">
+						<input type = "text" name = "PhoneNO">
 					</p>
 					<p><input type = "submit" value = "Spara"></p>
 

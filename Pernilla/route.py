@@ -10,7 +10,16 @@ def serve_static(filename):
     """Lägger in CSS-filen samt bilderna"""
     return static_file(filename, root ="static")
  
+ 
+
+@route('/program')
+def program():
+    bandett=databas.Program_torsdag()
     
+    return template("program", bandett=bandett)
+
+
+
 @route('/band')
 def band():
     """Hämtar variblerna i band från filen databas.py"""
