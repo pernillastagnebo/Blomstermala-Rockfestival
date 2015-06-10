@@ -3,23 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Blomstermala Rockfestival</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="/static/style.css" rel="stylesheet" type="text/css">
 	</head>
 	
 	<body>
-		<a href="login.html">Logga ut</a>
+		<a href="/band">Logga ut</a>
 		<div id="wrapper">
 			<header>
-					<img src="festival.png" alt="Blomstermåla Rockfestival">
+					<img src="/static/festival.png" alt="Blomstermåla Rockfestival">
 			</header>
 		
 		
 			<nav>
 				<ul> 	
-					<li><a href="kansli/band">BAND</a></li>
-					<li id="chosen"><a href="program.html">PROGRAM</a></li>
-					<li id ="chosen"><a href="/anstallda">ANSTÄLLDA</a></li>
-					<li ><a href="Scener.html">SCENER</a></li>
+					<li id="chosen"><a href="/kansli/band">BAND</a></li>
+					<li><a href="/anstallda">ANSTÄLLDA</a></li>
+					<li><a href="xxxxxxxxxx">SCENER</a></li>
 				</ul>
 			
 			</nav>
@@ -29,7 +28,7 @@
 				    <p>*Varje Kontaktperson får vara ansvarig för max 15 bandmedlemmar. </p>
 				    <p>*Säkerhetsarnsvariga får endast ha ansvar för en scen i taget.</p>
 			        
-			        <form action = "anstallda/addemployee/savedemployee" method = "POST">
+			        <form action = "/anstallda/addemployee/savedemployee" method = "POST">
 					<h2 id="headlinestext">Lägg till en Anställd</h2>
 					<p>
 						<label for "SSN">Personnummer:</label>

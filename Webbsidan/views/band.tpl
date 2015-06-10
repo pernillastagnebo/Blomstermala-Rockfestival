@@ -19,8 +19,8 @@
 				<ul> 	
 					
 					<li id="chosen"><a href="/band">BAND</a></li>
-					<li><a href="program">PROGRAM</a></li>
-					<li><a href="kontakt">KONTAKT</a></li>
+					<li><a href="/program">PROGRAM</a></li>
+					<li>KONTAKT</li>
 					
 				</ul>
 			
