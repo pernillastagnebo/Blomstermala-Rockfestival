@@ -67,17 +67,17 @@
                     <td></td>
                  </tr>
 				 <tr>
-                    <td>{{fredag[1]}}</td>
+                    <td></td>
                     <td></td> 
                     <td></td>
                  </tr>
 		<tr>
-                    <td>{{fredag[2]}}</td>
+                    <td></td>
                     <td></td> 
                     <td></td>
                  </tr>
                  <tr>
-                    <td>{{fredag[3]}}</td>
+                    <td></td>
                     <td></td> 
                     <td></td>
                  </tr>
@@ -92,32 +92,32 @@
                     <th>Tid</th>
                  </tr>
                  <tr>
-                    <td>{{lordag[0]}}</td>
+                    <td></td>
                     <td></td> 
                     <td></td>
                  </tr>
 		<tr>
-                    <td>{{lordag[1]}}</td>
+                    <td></td></td>
                     <td></td> 
                     <td></td>
                  </tr>
 		<tr>
-                    <td>{{lordag[2]}}</td>
+                    <td></td>
                     <td></td> 
                     <td></td>
                  </tr>
                  <tr>
-                    <td>{{lordag[3]}}</td>
+                    <td></td>
                     <td></td> 
                     <td></td>
                  </tr>
 		<tr>
-                    <td>{{lordag[4]}}</td>
+                    <td></td>
                     <td></td> 
                     <td></td>
                  </tr>
 		<tr>
-                    <td>{{lordag[5]}}</td>
+                    <td></td>
                     <td></td> 
                     <td></td>
                  </tr>
